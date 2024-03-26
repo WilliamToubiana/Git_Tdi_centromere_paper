@@ -1,0 +1,35 @@
+WORKING_DIR: /work/FAC/FBM/DEE/tschwand/asex_sinergia/wtoubian/chip/kmer_centromere
+
+trimmomatic_path: /work/FAC/FBM/DEE/tschwand/asex_sinergia/wtoubian/softwares/Trimmomatic-0.39/trimmomatic-0.39.jar
+trimmomatic_options: 2:30:12 SLIDINGWINDOW:10:10 MINLEN:71 #options for trimmomatic
+trimfasta: /work/FAC/FBM/DEE/tschwand/asex_sinergia/wtoubian/softwares/Trimmomatic-0.39/adapters/alladapters.fa
+
+
+samples:
+    xla_merge_final:
+        CA:
+            r1: /work/FAC/FBM/DEE/tschwand/asex_sinergia/wtoubian/chip/Tdi_testes_cenh3_1_R1.fq.gz
+        INPUT:
+            r1: /work/FAC/FBM/DEE/tschwand/asex_sinergia/wtoubian/chip/Tdi_testes_input_1_R1.fq.gz
+
+
+your_fav_seqdata:
+    xla_genome_chunks_v10.2:
+        fq: /work/FAC/FBM/DEE/tschwand/asex_sinergia/wtoubian/chip/Tdi_testes_cenh3_1_R1.fq.gz
+
+
+CIVAL: ["100"]
+
+KMER_LENS: ["25"]
+
+NUM_MADS: ["25"]
+
+
+#pairing in brackets needs to be {basename}_{readnum}
+pairing_config:
+   CAoINPUT: ['CA_r1','INPUT_r1']
+#   CAoH4: ['CA_r1','H4_r1']
+#   H4oINPUT: ['H4_r1','INPUT_r1']
+   # CAr2oINPUTr1: ['CA_r2','INPUT_r1']
+
+MEM: '160G'
