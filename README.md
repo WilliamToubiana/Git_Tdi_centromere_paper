@@ -6,7 +6,7 @@ Input data files for executing the codes are available upon request.
 
 ## Documentation
 
-script_chip_tdi_paper_final.sh describes the overall pipeline to analyse the centromere sequences in T. douglasi.
+script_chip_tdi_paper_final.sh describes the general pipeline to analyse the centromere sequences in T. douglasi.
 
 The separated folders include the different scripts used in the overall pipeline:
 
