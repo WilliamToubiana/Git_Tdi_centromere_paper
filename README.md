@@ -1,4 +1,4 @@
-# Centromere sequence identification in Timema douglasi
+# Centromere sequence identification in _Timema douglasi_
 
 This repository contains the codes used for analysing centromere sequences in the "Functional monocentricity with holocentric characteristics and chromosome-specific centromeres in a stick insect" article.
 
@@ -6,15 +6,15 @@ Input data files for executing the codes are available upon request.
 
 ## Documentation
 
-script_chip_tdi_paper_final.sh describes the general pipeline to analyse the centromere sequences in T. douglasi.
+script_chip_tdi_paper_final.sh describes the general pipeline to analyse the centromere sequences in _T. douglasi_.
 
 The separated folders include the different scripts used in the overall pipeline:
 
 ### TE_annotation
-script_transposable_element_annotation.Rmd: annotates transposable elements in the T. douglasi genome assembly.
+script_transposable_element_annotation.Rmd: annotates transposable elements in the _T. douglasi_ genome assembly.
 
 ### TR annotation and minimal rotations
-script_tandem-repeat_annotation.sh: annotates tandem repeat sequences in the T. douglasi genome assembly.
+script_tandem-repeat_annotation.sh: annotates tandem repeat sequences in the _T. douglasi_ genome assembly.
 
 script_minimal_rotation_parse.pl: orders every repeated motif sequence alphabetically.
 
@@ -26,7 +26,7 @@ script_levenshtein_rotations_F-R_inputFiles.py: computes pair-wise levenstein di
 ### Rscripts
 TRF_parsing.R: parses gff3 file obtained from tandem repeat annotation (see script_tandem-repeat_annotation.sh)
 
-Proportion_categories.R: estimates proportion and enrichment of sequence categories annotated in the T. douglasi genome assembly.
+Proportion_categories.R: estimates proportion and enrichment of sequence categories annotated in the _T. douglasi_ genome assembly.
 
 Enriched_windows.R: selects 10kb windows based on coverage ratio of CenH3-ChIP to input
 
@@ -39,6 +39,9 @@ Levenstein_network_contigs.R: builds network of sequence similarities among tand
 Heatmap_TRF-based.R: creates a heatmap with hierarchical clustering based on total array length inferred by summing Tandem Repeat Finder array lengths per repeat family
 
 Heatmap_blast-based.R: creates a heatmap with hierarchical clustering based on total array length inferred by summing the lengths of sequence motif blast hits with 80% sequence similarity and 80% query coverage.
+
+### Genome_assembly
+Genome assembly of _T. douglasi_.
 
 ### Gene_annotation
 Gene annotation of the _T. douglasi_ genome.
