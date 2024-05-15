@@ -41,7 +41,10 @@ Heatmap_TRF-based.R: creates a heatmap with hierarchical clustering based on tot
 Heatmap_blast-based.R: creates a heatmap with hierarchical clustering based on total array length inferred by summing the lengths of sequence motif blast hits with 80% sequence similarity and 80% query coverage.
 
 ### Genome_assembly
-Genome assembly of _T. douglasi_.
+Genome assembly pipeline for _T. douglasi_.
+
+### Sex_chr_ID
+Scripts to ID the X chromosome in _T. douglasi_.
 
 ### Gene_annotation
-Gene annotation of the _T. douglasi_ genome.
+Gene annotation scripts for the _T. douglasi_ genome.
