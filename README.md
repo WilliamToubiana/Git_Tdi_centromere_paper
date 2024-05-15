@@ -39,3 +39,6 @@ Levenstein_network_contigs.R: builds network of sequence similarities among tand
 Heatmap_TRF-based.R: creates a heatmap with hierarchical clustering based on total array length inferred by summing Tandem Repeat Finder array lengths per repeat family
 
 Heatmap_blast-based.R: creates a heatmap with hierarchical clustering based on total array length inferred by summing the lengths of sequence motif blast hits with 80% sequence similarity and 80% query coverage.
+
+### Gene_annotation
+Gene annotation of the _T. douglasi_ genome.
