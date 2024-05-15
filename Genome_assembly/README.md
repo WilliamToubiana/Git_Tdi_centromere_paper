@@ -8,7 +8,7 @@
 3. [Contamination removal](#3)
 4. [Haplotype purging](#4)
 
-Example with *Timema douglasi* (Tdi). Apply the same code for the other species.
+With *Timema douglasi* (Tdi).
 
 #### <a name="1"></a>1) Oxford Nanopore reads filtration. 
 
