@@ -61,7 +61,7 @@ TR_uniq<-read.table("Unique_TR_sequences_contigs_database.txt", header=T, sep="\
 
 #merge
 unconnected<-merge(motifs_unconnected, TR_uniq, by.x="unique_unconnected", by.y="TR_name", all.x = T, all.y = F)
-unconnected$group<-"no_family"
+unconnected$family<-"no_family"
 colnames(unconnected)[1]<-"split[[i]]"
 
 family1<-merge(split1, TR_uniq, by.x="split[[i]]", by.y="TR_name", all.x = T, all.y = F)
@@ -104,4 +104,4 @@ family_all$motif_size<-nchar(family_all$motif)
 colnames(family_all)[1]<-"sequence"
 
 setwd("/work/FAC/FBM/DEE/tschwand/asex_sinergia/wtoubian/chip/kmer_centromere/spades_assembly/levenstein")
-write.table(group_all, file = "Supplementary_table3.txt", row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
+write.table(family_all, file = "Supplementary_table3.txt", row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
